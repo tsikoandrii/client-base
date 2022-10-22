@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+	<title>Home</title>
+	<meta name="description" content="Startup HTML template OptimizedHTML 5">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="icon" href="images/favicon.png">
+	<link rel="stylesheet" href="css/app.min.css">
+</head>
+<body>
+<header class="header">
+	<div class="container">
+		<form class="header-search" id="search">
+			<input type="text" name="search">
+			<button type="submit"><img src="images/icons/search.svg" alt="icon"></button>
+		</form>
+	</div>
+</header>
+
+	<main class="page page-home">
+		<div class="container">
+			<div class="clients" id="clients-container"></div>
+		</div>
+	</main>
+
+	<div class="loader" id="loader">
+		<div class="loader-item">
+			<div class="loader-item__item"></div>
+			<div class="loader-item__item"></div>
+			<div class="loader-item__item"></div>
+		</div>
+	</div>
+
+
+<div class="backdrop" id="backdrop"></div>
+
+<!-- Code for Popups -->
+<div class="client-popup default-popup" id="client-popup">
+	<button class="default-popup-close" id="client-popup-close">
+		<img src="images/icons/close.svg" alt="close">
+	</button>
+	<strong class="client-popup__name" data-field="title">Adrienne Mason</strong>
+	<div class="client-popup-props">
+		<div class="client-popup-prop">
+			<span class="client-popup-prop__name">Телефон:</span>
+			<a data-field="phone" href="#" class="client-popup-prop__value client-popup-prop__value--tel">1-258-431-9358</a>
+		</div>
+		<div class="client-popup-prop">
+			<span class="client-popup-prop__name">Почта:</span>
+			<a data-field="email" href="#" class="client-popup-prop__value">erat.eget.ipsum@icloud.ca</a>
+		</div>
+		<div class="client-popup-prop">
+			<span class="client-popup-prop__name">Дата приема:</span>
+			<span data-field="date" class="client-popup-prop__value">Nov 15, 2020</span>
+		</div>
+		<div class="client-popup-prop client-popup-prop--big">
+			<span class="client-popup-prop__name">Должность:</span>
+			<span data-field="position" class="client-popup-prop__value">Sit amet, consectetur adipiscing elit. Aliquam consectetur dolor a feugiat vehicula. Integer egestas quis nibh sed faucibus. Fusce aliquet nisl sed dolor gravida, nec efficitur elit posuere</span>
+		</div>
+		<div class="client-popup-prop client-popup-prop--big">
+			<span class="client-popup-prop__name">Подразделение:</span>
+			<span data-field="department" class="client-popup-prop__value">Sit amet, consectetur adipiscing elit. Aliquam consectetur dolor a feugiat vehicula. Integer egestas quis nibh sed faucibus. Fusce aliquet nisl sed dolor gravida, nec efficitur elit posuere</span>
+		</div>
+	</div>
+	<div class="client-popup-additional">
+		<div class="client-popup-prop">
+			<span class="client-popup-prop__name">Дополнительная информация:</span>
+			<span data-field="additional" class="client-popup-prop__value">
+				Sit amet, consectetur adipiscing elit. Aliquam consectetur dolor a feugiat vehicula. Integer egestas quis nibh sed faucibus. Fusce aliquet nisl sed dolor gravida, nec efficitur elit posuere
+			</span>
+		</div>
+	</div>
+</div>
+<script src="js/app.min.js"></script>
+</body>
+</html>
