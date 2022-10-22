@@ -1,6 +1,9 @@
+require('dotenv').config()
 const fs = require('fs');
 const path = require('path')
 const fastify = require('fastify')({ logger: true });
+
+const PORT = process.env.PORT || 3000
 
 // Plugins
 fastify.register(require('@fastify/cors'), {})
@@ -35,7 +38,7 @@ fastify.get('/api/', (request, reply) => {
 
 const start = async () => {
   try {
-    await fastify.listen(3000)
+    await fastify.listen(PORT)
   } catch (err) {
     fastify.log.error(err);
     process.exit(1);
